@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>R-DIAG & R-ING — Contacts</title>
+  <meta name="description" content="Coordonnées R-DIAG et R-ING : mail, téléphone, site web et Facebook.">
+  <style>
+    :root {
+      --green:#4aa63b;
+      --blue:#446aa8;
+      --dark:#20242a;
+      --muted:#6b7280;
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --border:#e6e9ef;
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      min-height:100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color:var(--dark);
+      background:
+        radial-gradient(circle at top left, rgba(74,166,59,.13), transparent 30%),
+        radial-gradient(circle at top right, rgba(68,106,168,.13), transparent 30%),
+        var(--bg);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px 16px;
+    }
+    .page {
+      width:min(940px, 100%);
+      background:rgba(255,255,255,.92);
+      border:1px solid var(--border);
+      border-radius:28px;
+      box-shadow:0 24px 70px rgba(22,34,51,.12);
+      overflow:hidden;
+    }
+    header {
+      text-align:center;
+      padding:34px 22px 18px;
+    }
+    .logos {
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:22px;
+      align-items:stretch;
+      margin-bottom:22px;
+    }
+    .logo-card {
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:22px;
+      padding:22px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:220px;
+    }
+    .logo-card img {
+      max-width:100%;
+      max-height:190px;
+      object-fit:contain;
+    }
+    h1 {
+      margin:8px 0 8px;
+      font-size:clamp(28px, 4vw, 44px);
+      letter-spacing:.02em;
+      line-height:1.1;
+    }
+    .subtitle {
+      margin:0 auto;
+      max-width:650px;
+      color:var(--muted);
+      font-size:clamp(15px, 2vw, 18px);
+      line-height:1.55;
+    }
+    .content {
+      padding:8px 28px 34px;
+    }
+    .contact-grid {
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:16px;
+    }
+    .contact {
+      display:flex;
+      gap:14px;
+      align-items:center;
+      padding:18px;
+      border:1px solid var(--border);
+      border-radius:18px;
+      background:#fff;
+      text-decoration:none;
+      color:inherit;
+      transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+    .contact:hover {
+      transform:translateY(-2px);
+      box-shadow:0 14px 34px rgba(22,34,51,.10);
+      border-color:#ccd3df;
+    }
+    .icon {
+      width:46px;
+      height:46px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      flex:0 0 46px;
+      font-size:22px;
+      background:linear-gradient(135deg, rgba(74,166,59,.15), rgba(68,106,168,.15));
+    }
+    .label {
+      font-size:13px;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      font-weight:700;
+      color:var(--muted);
+      margin-bottom:4px;
+    }
+    .value {
+      font-size:clamp(16px, 2.2vw, 20px);
+      font-weight:700;
+      word-break:break-word;
+    }
+    .footer {
+      text-align:center;
+      padding:18px 22px 26px;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .accent {
+      display:flex;
+      height:6px;
+    }
+    .accent span:first-child { flex:1; background:var(--green); }
+    .accent span:last-child { flex:1; background:var(--blue); }
+    @media (max-width:720px) {
+      body { padding:14px; align-items:flex-start; }
+      .page { border-radius:22px; }
+      header { padding:24px 16px 14px; }
+      .logos, .contact-grid { grid-template-columns:1fr; }
+      .logo-card { min-height:170px; padding:16px; }
+      .logo-card img { max-height:155px; }
+      .content { padding:6px 16px 24px; }
+      .contact { padding:16px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="accent"><span></span><span></span></div>
+    <header>
+      <section class="logos" aria-label="Logos des sociétés">
+        <div class="logo-card">
+          <!-- Logo R-DIAG (embedded image truncated for repo) -->
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOYAAAEiCAYAAADtZK6t..." alt="R-DIAG logo">
+        </div>
+        <div class="logo-card">
+          <!-- Logo R-ING (embedded image truncated for repo) -->
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOsAAAEkCAYAAADOw8Y..." alt="R-ING logo">
+        </div>
+      </section>
+      <h1>R-DIAG &amp; R-ING</h1>
+      <p class="subtitle">Diagnostics structures &amp; études de structures — retrouvez ici toutes nos coordonnées.</p>
+    </header>
+
+    <section class="content" aria-label="Coordonnées">
+      <div class="contact-grid">
+        <a class="contact" href="mailto:contact@r-ing.fr">
+          <div class="icon">✉️</div>
+          <div>
+            <div class="label">Mail</div>
+            <div class="value">contact@r-ing.fr</div>
+          </div>
+        </a>
+
+        <a class="contact" href="tel:+33321393491">
+          <div class="icon">☎️</div>
+          <div>
+            <div class="label">Téléphone</div>
+            <div class="value">03 21 39 34 91</div>
+          </div>
+        </a>
+
+        <a class="contact" href="http://www.r-ing.fr/" target="_blank" rel="noopener">
+          <div class="icon">🌐</div>
+          <div>
+            <div class="label">Site web</div>
+            <div class="value">www.r-ing.fr</div>
+          </div>
+        </a>
+
+        <a class="contact" href="https://www.facebook.com/profile.php?id=100007060819225" target="_blank" rel="noopener">
+          <div class="icon">f</div>
+          <div>
+            <div class="label">Facebook</div>
+            <div class="value">Page Facebook</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <div class="footer">Scannez, cliquez et contactez-nous facilement.</div>
+  </main>
+</body>
+</html>
